@@ -31,6 +31,21 @@ h2{font-family:Poppins;font-weight:800;font-size:34px;line-height:1.1;margin-bot
 .foot{padding:44px 60px;text-align:center;color:var(--mut);font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.06em}
 .foot .hh{color:var(--teal)}
 .tag{display:inline-block;background:rgba(139,92,246,.18);color:#6d28d9;border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:14px;font-weight:700;margin-bottom:22px;font-family:'Space Mono',monospace;letter-spacing:.08em}
+
+.big .ctx{color:#8a7aa8;font-size:14px;margin-top:9px;line-height:1.45;font-weight:500}
+.rank{display:flex;flex-direction:column;gap:12px;margin:6px 0 30px}
+.rank .row{display:grid;grid-template-columns:220px 1fr;gap:16px;align-items:center}
+.rank .nm{font-weight:700;color:#20143a;font-size:16px;line-height:1.2}
+.rank .nm span{display:block;color:#8a7aa8;font-size:12px;font-weight:600}
+.rank .bar{position:relative;background:#f0ebfa;border-radius:999px;height:34px;overflow:hidden}
+.rank .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:999px;background:linear-gradient(90deg,#a855f7,#0d9488)}
+.rank .bar b{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#20143a;font-weight:800;font-family:Poppins;font-size:15px}
+.cmpwrap{overflow-x:auto}
+table.cmp{width:100%;border-collapse:collapse;margin-top:6px;font-size:15px;min-width:620px}
+table.cmp th,table.cmp td{padding:11px 10px;text-align:center;border-bottom:1px solid #eee6f7}
+table.cmp th{color:#7c3aed;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.04em;text-transform:uppercase}
+table.cmp td:first-child,table.cmp th:first-child{text-align:left;font-weight:700;color:#20143a;white-space:nowrap}
+table.cmp td.tot{font-weight:800;color:#0d9488}
 </style></head><body><div class=wrap>
 <section class=hero>
   <div class=kick><span class=ln></span> THE AI CHALLENGE · CEVA · make [IT] happen</div>
@@ -40,16 +55,34 @@ h2{font-family:Poppins;font-weight:800;font-size:34px;line-height:1.1;margin-bot
 <section>
   <div class=kick><span class=ln></span> Os números do desafio</div>
   <div class=nums>
-    <div class=big><div class=n>5</div><div class=l>squads na arena</div></div>
-    <div class=big><div class=n>61,6</div><div class=l>pontuação média (de 47 a 72)</div></div>
-    <div class=big><div class=n>16,6</div><div class=l>média nas missões da fase Design Thinking</div></div>
-    <div class=big><div class=n>+18,8</div><div class=l>pitch médio (todos souberam vender)</div></div>
+    <div class=big><div class=n>5</div><div class=l>squads na arena</div><div class=ctx>Times de 4-5 pessoas, tudo resolvido em 1 dia de desafio.</div></div>
+    <div class=big><div class=n>61,6</div><div class=l>pontuação média (de 47 a 72)</div><div class=ctx>Topo colado: do 1º (72) ao 3º (67) foram só 5 pontos.</div></div>
+    <div class=big><div class=n>16,6</div><div class=l>média nas missões da fase Design Thinking</div><div class=ctx>De 20 possíveis, ou seja 83%. Os times entenderam bem o problema e ouviram o cliente.</div></div>
+    <div class=big><div class=n>+18,8</div><div class=l>pitch médio (todos souberam vender)</div><div class=ctx>Todos entre +18 e +20. Ninguém vacilou na hora de defender a ideia.</div></div>
   </div>
 </section>
 <section>
   <div class=tag>RANKING</div>
   <h2>Do campeão ao 5º, uma disputa apertada no topo</h2>
-  <div class=lead>🥇 Piras 72 · 🥈 Quinteto Fantástico 70 · 🥉 Prompt Titans 67 · 4º Equipe de Resgate 52 · 5º Liga dos SuperPoderes 47. Os três primeiros ficaram em 5 pontos, decididos na execução e no pitch.</div>
+  <div class=lead>Ranking por pontuação total (topo: 72). Os três primeiros ficaram em 5 pontos, decididos na execução e no pitch.</div>
+  <div class=rank>
+    <div class=row><div class=nm>🥇 Piras<span>Squad 2</span></div><div class=bar><i style="width:100%"></i><b>72</b></div></div>
+    <div class=row><div class=nm>🥈 Quinteto Fantástico<span>Squad 5</span></div><div class=bar><i style="width:97%"></i><b>70</b></div></div>
+    <div class=row><div class=nm>🥉 Prompt Titans<span>Squad 1</span></div><div class=bar><i style="width:93%"></i><b>67</b></div></div>
+    <div class=row><div class=nm>Equipe de Resgate<span>Squad 3</span></div><div class=bar><i style="width:72%"></i><b>52</b></div></div>
+    <div class=row><div class=nm>Liga dos Superpoderes<span>Squad 4</span></div><div class=bar><i style="width:65%"></i><b>47</b></div></div>
+  </div>
+  <div class=cmpwrap><table class=cmp>
+    <thead><tr><th>Time</th><th>Aquec /10</th><th>Design Think /20</th><th>IA mão na massa /20</th><th>Pitch</th><th>Boost</th><th>Total</th></tr></thead>
+    <tbody>
+    <tr><td>🥇 Piras</td><td>8</td><td>19</td><td>20</td><td>+20</td><td>+5</td><td class=tot>72</td></tr>
+    <tr><td>🥈 Quinteto Fantástico</td><td>9</td><td>18</td><td>15</td><td>+18</td><td>+10</td><td class=tot>70</td></tr>
+    <tr><td>🥉 Prompt Titans</td><td>9</td><td>19</td><td>15</td><td>+19</td><td>+5</td><td class=tot>67</td></tr>
+    <tr><td>Equipe de Resgate</td><td>8</td><td>13</td><td>13</td><td>+18</td><td>–</td><td class=tot>52</td></tr>
+    <tr><td>Liga dos Superpoderes</td><td>4</td><td>14</td><td>10</td><td>+19</td><td>–</td><td class=tot>47</td></tr>
+    </tbody>
+  </table></div>
+  <div class=lead style="margin-top:18px;font-size:16px">Leitura rápida: Piras e Quinteto brilharam na execução com IA; a distância pro 4º e 5º veio do aquecimento e da fase de IA mão na massa, não do pitch, onde todos foram bem.</div>
 </section>
 <section>
   <div class=kick><span class=ln></span> Médias por etapa</div>
